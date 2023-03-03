@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Task-12</title>
+	 
+	 <style>
+	     .container{
+		   width:100%;
+		   padding:0 15px;
+		   margin:0 auto;
+		 }
+	     .section{
+		 
+		 box-shadow:0 0 2px #000;
+		 margin:0 auto;
+		 padding:30px;		 
+		 background-image:linear-gradient(rgba( 0,0,0,0.55),rgba( 0,0,0,0.55)),url('image/pic.jpg');
+		 background-repeat:no-repeat;
+		 background-size:cover;
+		 background-attachment:fixed;
+		 background-position:center;
+		 
+		 }
+		 
+		 label{
+		 
+		   color:#fff;
+		 
+		 }
+		 
+		 
+		 input{
+		 
+		    padding:10px 20px;
+			
+		 }
+		 
+		 
+		 button{
+		        padding: 10px 15px;
+				margin-left: 140px;
+				background-color: #5c6bc0;
+				color: #fff;
+				border: none;
+				font-size: 20px;
+		 }
+	 </style>
+</head>
+<body>
+<section class="section">
+		<div class="container">
+				<div class="section-content">
+						 <form>
+						   <label for="amount">Amount:</label>
+						   <input type="text" id="amount">
+						   <br><br><br>
+						   <label for="percentage">Percentage:</label>
+						   <input type="text" id="percentage">
+						   <br><br><br>
+						   <label for="p-amount">Percentage Amount:</label>
+						   <input type="text" id="p-amount" disabled>
+						   <br><br><br>
+						   <label for="t-amount">Total Amount:</label>
+						   <input type="text" id="t-amount" disabled>
+						   <br><br><br>
+						   <button>Calculate</button>
+						   <div id="result">
+						   </div>
+						 </form>
+				 </div>
+		 </div>
+ </section>
+<script src="main.js"></script>
+</body>
+</html>
